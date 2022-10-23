@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Color list</h1>
+
+    <select name="back" id="back" onchange="show()">
+        <option disabled selected="selected">drop-down list</option>
+        <option value="aquamarine">aquamarine</option>
+        <option value="gold">gold</option>
+        <option value="lavender">lavender</option>
+    </select>
+    
+    <script>
+        function show() {
+            let val = document.getElementById("back").value;
+
+                if (val == "aquamarine") {
+                    document.body.style.backgroundColor = "aquamarine";
+                }
+    
+                else if (val == "gold") {
+                    document.body.style.backgroundColor = "gold";
+                }
+    
+                else if (val == "lavender") {
+                    document.body.style.backgroundColor = "lavender";
+                }
+
+}
+
+</script>
+
+</body>
+</html>
